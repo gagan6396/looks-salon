@@ -22,7 +22,7 @@ export default function ImageSlider() {
   const next = () => setCurrent((p) => (p + 1) % images.length);
 
   return (
-    <div className="w-full mt-18 md:mt-0">
+    <div className="w-full mt-18 md:mt-6">
       <div className="relative w-full overflow-hidden">
 
         <div

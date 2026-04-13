@@ -38,9 +38,7 @@ export default function AboutSection() {
           from { transform: rotate(0deg); }
           to   { transform: rotate(360deg); }
         }
-        .tools-spin {
-          animation: spin-tools 18s linear infinite;
-        }
+        .tools-spin { animation: spin-tools 18s linear infinite; }
 
         .stat-bubble {
           background: #1a3040;
@@ -77,7 +75,6 @@ export default function AboutSection() {
           font-weight: 300;
           color: #5a5a5a;
           line-height: 1.78;
-          font-size: 0.94rem;
         }
         .feature-title {
           font-family: 'Cormorant Garamond', serif;
@@ -108,7 +105,7 @@ export default function AboutSection() {
           background: #1a3040;
           color: #fff;
           border-radius: 100px;
-          padding: 15px 40px;
+          padding: 12px 32px;
           display: inline-flex;
           align-items: center;
           gap: 12px;
@@ -118,17 +115,14 @@ export default function AboutSection() {
         .cta-dark:hover { background: #243f52; transform: translateX(3px); }
       `}</style>
 
-      <section className="about-bg py-16 lg:py-24 overflow-hidden">
-        <div className="max-w-[1300px] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+      <section className="about-bg py-8 lg:py-24 overflow-hidden">
+        <div className="max-w-[1300px] mx-auto px-4 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
 
           {/* ══ LEFT: Visual ══ */}
-          <div className="relative flex items-center justify-center" style={{ height: 560 }}>
+          <div className="relative flex items-center justify-center mx-auto w-[260px] h-[260px] sm:w-[380px] sm:h-[380px] lg:w-full lg:h-[560px]">
 
-            {/* Layer 1 — spinning tools (z-0) */}
-            <div
-              className="tools-spin absolute"
-              style={{ width: 500, height: 500, zIndex: 1 }}
-            >
+            {/* Spinning tools */}
+            <div className="tools-spin absolute w-[220px] h-[220px] sm:w-[340px] sm:h-[340px] lg:w-[500px] lg:h-[500px]" style={{ zIndex: 1 }}>
               <Image
                 src="/circle-hairr.png"
                 alt="Salon tools"
@@ -138,11 +132,8 @@ export default function AboutSection() {
               />
             </div>
 
-            {/* Layer 2 — model on top (z-10) */}
-            <div
-              className="absolute"
-              style={{ width: 340, height: 480, zIndex: 10, bottom: 0 }}
-            >
+            {/* Model */}
+            <div className="absolute bottom-0 w-[150px] h-[210px] sm:w-[230px] sm:h-[320px] lg:w-[340px] lg:h-[480px]" style={{ zIndex: 10 }}>
               <Image
                 src="/haira-about-22.png"
                 alt="Salon model"
@@ -152,29 +143,30 @@ export default function AboutSection() {
               />
             </div>
 
-            {/* Stat bubble — Years (left) */}
-            <div className="stat-bubble" style={{ width: 136, height: 136, left: "0%", top: "26%", zIndex: 20 }}>
-              <span className="stat-num" style={{ fontSize: "2.6rem" }}>24</span>
-              <span className="stat-label" style={{ fontSize: "0.75rem" }}>Years of<br/>Experience</span>
+            {/* Stat — Years */}
+            <div className="stat-bubble w-[70px] h-[70px] sm:w-[100px] sm:h-[100px] lg:w-[136px] lg:h-[136px]"
+              style={{ left: "0%", top: "26%", zIndex: 20 }}>
+              <span className="stat-num text-[1rem] sm:text-[1.6rem] lg:text-[2.6rem]">24</span>
+              <span className="stat-label text-[0.42rem] sm:text-[0.6rem] lg:text-[0.75rem]">Years of<br/>Experience</span>
             </div>
 
-            {/* Stat bubble — Services (right) */}
-            <div className="stat-bubble" style={{ width: 150, height: 150, right: "0%", bottom: "18%", zIndex: 20 }}>
-              <span className="stat-num" style={{ fontSize: "2.1rem" }}>3,800</span>
-              <span className="stat-label" style={{ fontSize: "0.75rem" }}>Hairdresser<br/>Service</span>
+            {/* Stat — Services */}
+            <div className="stat-bubble w-[78px] h-[78px] sm:w-[110px] sm:h-[110px] lg:w-[150px] lg:h-[150px]"
+              style={{ right: "0%", bottom: "18%", zIndex: 20 }}>
+              <span className="stat-num text-[0.85rem] sm:text-[1.4rem] lg:text-[2.1rem]">3,800</span>
+              <span className="stat-label text-[0.42rem] sm:text-[0.6rem] lg:text-[0.75rem]">Hairdresser<br/>Service</span>
             </div>
-
           </div>
 
           {/* ══ RIGHT: Text ══ */}
-          <div className="flex flex-col gap-6 lg:pl-8">
-            <h2 className="section-heading text-[clamp(1.9rem,3.2vw,2.75rem)]">
+          <div className="flex flex-col gap-4 lg:gap-6 lg:pl-8">
+            <h2 className="section-heading text-[1.5rem] sm:text-[2rem] lg:text-[2.75rem]">
               Leave your hair to our<br/>
               expert hairdressers<br/>
               you can trust
             </h2>
 
-            <p className="section-body max-w-[420px]">
+            <p className="section-body text-[0.82rem] sm:text-[0.9rem] lg:text-[0.94rem] max-w-[420px]">
               Contact us for hair cutting, coloring, blow drying, care and more. We care about your hair
               with new generation and natural methods. Because you are valuable to us. We are at your
               service with innovative applications, customer satisfaction, new generation hair care.
@@ -182,19 +174,19 @@ export default function AboutSection() {
 
             <div className="divider-hatch" />
 
-            <div className="flex flex-col gap-5 mt-1">
+            <div className="flex flex-col gap-3 lg:gap-5">
               {features.map((f) => (
-                <div key={f.title} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 mt-0.5">{f.icon}</div>
+                <div key={f.title} className="flex items-start gap-3">
+                  <div className="flex-shrink-0 mt-0.5 scale-75 sm:scale-90 lg:scale-100 origin-top-left">{f.icon}</div>
                   <div>
-                    <div className="feature-title">{f.title}</div>
-                    <p className="feature-desc mt-1">{f.desc}</p>
+                    <div className="feature-title text-[0.95rem] lg:text-[1.15rem]">{f.title}</div>
+                    <p className="feature-desc text-[0.78rem] lg:text-[0.87rem] mt-1">{f.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-2">
+            <div className="mt-1">
               <a href="/about" className="cta-dark">
                 Get to know us
                 <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
