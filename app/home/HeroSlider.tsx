@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "looksban.webp",
-  "/images/banner2.webp",
-  "/images/banner3.webp",
+  "/looksban.webp",
+  "/looks-salon.webp",
+  "/banner3.webp",
 ];
 
 export default function ImageSlider() {
@@ -34,7 +34,7 @@ export default function ImageSlider() {
               key={i}
               src={src}
               alt={`banner-${i}`}
-              className="w-full flex-shrink-0 object-cover h-[200px] sm:h-[320px] md:h-[420px] lg:h-[520px]"
+              className="w-full flex-shrink-0"
             />
           ))}
         </div>

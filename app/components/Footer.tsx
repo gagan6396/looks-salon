@@ -27,7 +27,7 @@ const navLinks: Record<string, { label: string; href: string }[]> = {
 const socials = [
   {
     label: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/looks_dehradun?igsh=bGtzYnk0OXptd2Vl",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-[18px] h-[18px]">
         <rect x="2" y="2" width="20" height="20" rx="5" />
@@ -38,7 +38,7 @@ const socials = [
   },
   {
     label: "Facebook",
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/share/1CoQuC9JGC/",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-[18px] h-[18px]">
         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
@@ -135,9 +135,9 @@ export default function Footer() {
             Visit Us
           </p>
           <address className="not-italic space-y-1">
-            <p className="text-[13px] text-white">Looks Salon Dehradun</p>
-            <p className="text-[13px] text-white">Rajpur Road, Dehradun</p>
-            <p className="text-[13px] text-white">Uttarakhand — 248001</p>
+            <p className="text-[13px] text-white">GMS Road</p>
+            <p className="text-[13px] text-white"> Next to Raymond Showroom</p>
+            <p className="text-[13px] text-white">Dehradun, 248001</p>
           </address>
         </div>
 
@@ -150,17 +150,17 @@ export default function Footer() {
           {/* Contact info: Mobile & Email */}
           <div className="space-y-2 mb-5">
             <a
-              href="tel:+911234567890"
+              href="tel:+918006022266"
               className="block text-[13px] text-white hover:text-white transition-colors duration-200"
             >
-              +91 12345 67890
+              +91 8006022266
             </a>
-            <a
+            {/* <a
               href="mailto:info@looksacademy.in"
               className="block text-[13px] text-white hover:text-white transition-colors duration-200"
             >
               info@looksacademy.in
-            </a>
+            </a> */}
           </div>
           
           <ul className="space-y-3 mb-6">

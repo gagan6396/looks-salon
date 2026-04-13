@@ -116,7 +116,7 @@ export default function Navbar() {
           {/* ── Phone CTA ── */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+12345678910"
+              href="tel:+918006022266"
               className="phone-btn flex items-center gap-2.5 px-4 py-2 rounded-full text-white"
             >
               <span className="w-7 h-7 rounded-full bg-[#c9a96e]/20 border border-[#c9a96e]/50 flex items-center justify-center flex-shrink-0">
@@ -124,7 +124,7 @@ export default function Navbar() {
                   <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="#c9a96e"/>
                 </svg>
               </span>
-              +1 (234) 567 89 10
+              +91 8006022266
             </a>
           </div>
 

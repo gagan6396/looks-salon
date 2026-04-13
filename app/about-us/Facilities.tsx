@@ -8,8 +8,8 @@ const facilities = [
           <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
         </svg>
       ),
-      title: "Modern Studio Space",
-      desc: "Spacious, well-lit workstations designed for comfort and precision — built for both clients and professionals.",
+      title: "Modern Salon Space",
+      desc: "Spacious, well-designed stations created for comfort, hygiene, and a premium salon experience.",
     },
     {
       icon: (
@@ -17,8 +17,8 @@ const facilities = [
           <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
         </svg>
       ),
-      title: "Expert Consultation",
-      desc: "One-on-one sessions with senior stylists to understand your hair type, lifestyle, and aesthetic goals.",
+      title: "Personalized Consultation",
+      desc: "Detailed one-on-one consultations to understand your hair type, preferences, and desired look.",
     },
     {
       icon: (
@@ -27,7 +27,7 @@ const facilities = [
         </svg>
       ),
       title: "Premium Products",
-      desc: "We use only internationally certified, salon-grade products that are safe, effective, and results-driven.",
+      desc: "We use trusted, salon-grade products that ensure safe application and long-lasting results.",
     },
     {
       icon: (
@@ -35,8 +35,8 @@ const facilities = [
           <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
         </svg>
       ),
-      title: "Training & Workshops",
-      desc: "Regular skill-building workshops open to students and professionals looking to sharpen their craft.",
+      title: "Advanced Techniques",
+      desc: "Our stylists stay updated with the latest trends, techniques, and styles from across the industry.",
     },
     {
       icon: (
@@ -44,8 +44,8 @@ const facilities = [
           <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
         </svg>
       ),
-      title: "Relaxing Ambience",
-      desc: "A calm, curated environment designed to make every visit feel like a personal retreat from the everyday.",
+      title: "Relaxing Experience",
+      desc: "A calm and welcoming environment designed to help you unwind while we take care of your hair.",
     },
     {
       icon: (
@@ -53,8 +53,8 @@ const facilities = [
           <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
         </svg>
       ),
-      title: "Flexible Appointments",
-      desc: "Easy online and walk-in booking with flexible time slots to fit your schedule — mornings to evenings.",
+      title: "Easy Appointments",
+      desc: "Convenient booking options with flexible timings to fit seamlessly into your schedule.",
     },
   ];
   

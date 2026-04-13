@@ -1,34 +1,71 @@
-import Image from "next/image";
-import Link from "next/link";
+"use client"
 
-const ContactBanner = () => {
+import { useState, useEffect } from "react";
+
+const images = [
+  "looksban.webp"
+];
+
+export default function ImageSlider() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const prev = () => setCurrent((p) => (p - 1 + images.length) % images.length);
+  const next = () => setCurrent((p) => (p + 1) % images.length);
+
   return (
-    <section className="relative w-full h-[74vh] max-h-[750px] min-h-[400px] overflow-hidden bg-black">
+    <div className="w-full mt-22 md:mt-20">
+      <div className="relative w-full overflow-hidden">
 
-      <Image
-        src="/images/banner.jpg"
-        alt="Salon banner"
-        fill
-        className="object-cover object-center grayscale"
-        priority
-      />
-
-      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 to-black/10" />
-
-      <div className="absolute inset-0 z-10 flex flex-col justify-end items-start px-[6%] pb-16 max-w-[700px]">
-        <h2 className="text-white font-bold leading-snug mb-5 text-[clamp(1.75rem,5.2vw,3.8rem)]">
-          Redefine Your Natural Beauty
-        </h2>
-        <Link
-          href="/services"
-          className="inline-flex items-center gap-2 bg-white text-black text-[clamp(0.6rem,1.3vw,0.78rem)] font-semibold tracking-[0.12em] uppercase px-6 py-3 border-2 border-white hover:bg-transparent hover:text-white transition-colors duration-200"
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${current * 100}%)` }}
         >
-          Explore <span>→</span>
-        </Link>
+          {images.map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt={`banner-${i}`}
+              className="w-full flex-shrink-0 object-cover h-[200px] sm:h-[320px] md:h-[420px] lg:h-[520px]"
+            />
+          ))}
+        </div>
+
+        <button
+          onClick={prev}
+          aria-label="Previous"
+          className="absolute left-3 top-1/2 -translate-y-1/2 text-white text-3xl px-2"
+        >
+          ‹
+        </button>
+        <button
+          onClick={next}
+          aria-label="Next"
+          className="absolute right-3 top-1/2 -translate-y-1/2 text-white text-3xl px-2"
+        >
+          ›
+        </button>
+
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              aria-label={`Slide ${i + 1}`}
+              className={`h-1.5 rounded-full transition-all duration-300 ${
+                i === current ? "w-5 bg-white" : "w-2 bg-white/40"
+              }`}
+            />
+          ))}
+        </div>
+
       </div>
-
-    </section>
+    </div>
   );
-};
-
-export default ContactBanner;
+}

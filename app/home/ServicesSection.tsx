@@ -13,8 +13,8 @@ const services = [
     back: {
       heading: "What's Included",
       points: ["Deep conditioning treatment", "Scalp massage & analysis", "Custom moisture therapy", "Heat protection styling"],
-      duration: "60 min",
-      price: "From $45",
+      // duration: "60 min",
+      // price: "From $45",
     },
   },
   {
@@ -26,8 +26,8 @@ const services = [
     back: {
       heading: "What's Included",
       points: ["Consultation & face shape analysis", "Blow dry & finish", "Curling or straightening", "Style hold & protect"],
-      duration: "75 min",
-      price: "From $60",
+      // duration: "75 min",
+      // price: "From $60",
     },
   },
   {
@@ -39,8 +39,8 @@ const services = [
     back: {
       heading: "What's Included",
       points: ["Precision cut technique", "Face-shape tailored style", "Razor or scissor finish", "Complimentary wash & dry"],
-      duration: "45 min",
-      price: "From $35",
+      // duration: "45 min",
+      // price: "From $35",
     },
   },
   {
@@ -52,8 +52,8 @@ const services = [
     back: {
       heading: "What's Included",
       points: ["Color consultation", "Full or partial highlights", "Balayage / ombre options", "Toner & gloss finish"],
-      duration: "90 min",
-      price: "From $80",
+      // duration: "90 min",
+      // price: "From $80",
     },
   },
 ];
@@ -222,7 +222,7 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
               </div>
 
               {/* Bottom: duration + price + flip back hint */}
-              <div>
+              {/* <div>
                 <div style={{ height: 1, background: "rgba(255,255,255,0.1)", marginBottom: 16 }} />
                 <div className="flex items-center justify-between mb-4">
                   <div>
@@ -243,7 +243,7 @@ function ServiceCard({ service }: { service: typeof services[0] }) {
                 }}>
                   tap to flip back
                 </p>
-              </div>
+              </div> */}
 
             </div>
           </div>

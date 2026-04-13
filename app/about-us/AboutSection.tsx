@@ -12,15 +12,7 @@ const AboutAcademy = () => {
           </h2>
 
           <p className="text-neutral-600 text-base leading-relaxed mb-8">
-            Looks Academy is a premier professional training institute dedicated to shaping the
-            next generation of beauty and hairstyling experts. Backed by the legacy of Looks
-            Salon—India's largest and fastest-growing pan-India salon chain—the academy brings
-            industry knowledge, global techniques, and real-world salon experience under one roof.
-            With a strong focus on practical learning, expert mentorship, and career-oriented
-            education, Looks Academy equips students with the skills, confidence, and
-            professionalism required to succeed in the ever-evolving beauty and wellness industry.
-            Located in Dehradun, the academy stands as a center of excellence where creativity is
-            nurtured, talent is refined, and passion is transformed into a rewarding career.
+          Looks Salon is a premier destination for professional hair and beauty services, dedicated to delivering exceptional style and care. Backed by the legacy of one of India’s largest and fastest-growing salon chains, Looks Salon brings together industry expertise, global techniques, and real salon experience under one roof.With a strong focus on personalized service, skilled stylists, and modern practices, we ensure every client receives the highest standard of care and attention. From precision haircuts to advanced coloring and treatments, our goal is to enhance your confidence and elevate your look. Located in Dehradun, Looks Salon stands as a space where creativity meets expertise—where every visit is designed to transform not just your hair, but your overall experience.
           </p>
 
           <div className="w-16 h-px bg-black" />

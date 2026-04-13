@@ -118,9 +118,9 @@ const ContactSection = () => {
           <div className="flex flex-col">
 
             {/* Google Map embed */}
-            <div className="w-full h-64 md:h-72 grayscale">
+            <div className="w-full h-64 md:h-72">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55441.44918609944!2d77.9593!3d30.3165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c356c888af%3A0x4c3562c032518799!2sDehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.1876979739886!2d78.00925697464349!3d30.31717850559881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b12b171f34b%3A0x7d6b0adfd4917bf6!2sLooks%20Salon%20GMS!5e0!3m2!1sen!2sin!4v1776080576067!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -138,25 +138,25 @@ const ContactSection = () => {
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                   ),
                   label: "Address",
-                  value: "Looks Salon, Rajpur Road, Dehradun, Uttarakhand 248001",
+                  value: "GMS Road, Next to Raymond Showroom, Dehradun, Uttarakhand 248001",
                 },
                 {
                   icon: (
                     <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.89 10.8 19.79 19.79 0 01.82 2.18 2 2 0 012.8 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.77a16 16 0 006.29 6.29l1.13-1.14a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
                   ),
                   label: "Phone",
-                  value: "+91 (234) 567 89 10",
+                  value: "+91 8006022266",
                 },
-                {
-                  icon: (
-                    <>
-                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                      <polyline points="22,6 12,13 2,6"/>
-                    </>
-                  ),
-                  label: "Email",
-                  value: "hello@lookssalon.in",
-                },
+                // {
+                //   icon: (
+                //     <>
+                //       <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                //       <polyline points="22,6 12,13 2,6"/>
+                //     </>
+                //   ),
+                //   label: "Email",
+                //   value: "hello@lookssalon.in",
+                // },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4">
                   <div className="w-9 h-9 border border-neutral-300 flex items-center justify-center shrink-0">

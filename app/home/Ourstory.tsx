@@ -6,36 +6,36 @@ const chapters = [
   {
     num: "01",
     title: "The salon that started it all",
-    desc: "Looks Salon built its name across India, one client at a time. With it came a deep understanding of what the industry truly needed — trained, confident professionals.",
+    desc: "Looks Salon built its reputation one client at a time, delivering exceptional hair and beauty services with consistency, care, and creativity.",
   },
   {
     num: "02",
-    title: "A school born from the floor",
-    desc: "Our mentors weren't just teachers — they were working stylists. So we built an academy that mirrors real salon life: fast, hands-on, and uncompromising.",
+    title: "Crafted by real experts",
+    desc: "Our stylists aren’t just trained — they are experienced professionals who understand real client needs, trends, and techniques that truly work.",
   },
   {
     num: "03",
-    title: "Dehradun becomes our home",
-    desc: "Nestled in the hills, Looks Academy Dehradun opened to students hungry for more than textbooks — they wanted a career, and we gave them a launchpad.",
+    title: "A destination for great hair",
+    desc: "Looks Salon Dehradun is where style meets precision. A place where every client walks in with an idea and walks out with confidence.",
   },
 ];
 
 const values = [
   {
-    title: "Real-world readiness",
-    desc: "Every module is designed around actual salon scenarios, not theory alone.",
+    title: "Client-first approach",
+    desc: "Every service is tailored to suit your personality, preferences, and lifestyle.",
   },
   {
-    title: "Excellence as a standard",
-    desc: "We don't graduate students who are good enough. We graduate professionals.",
+    title: "Excellence in every detail",
+    desc: "From consultation to finish, we focus on precision, quality, and perfection.",
   },
   {
-    title: "Confidence over credentials",
-    desc: "Our certificate means something because our students can back it up in any salon.",
+    title: "Confidence through style",
+    desc: "We don’t just style hair — we create looks that make you feel your best.",
   },
   {
-    title: "Lifelong growth",
-    desc: "Graduating is day one, not the finish line. We stay with our students as they grow.",
+    title: "Evolving with trends",
+    desc: "We stay ahead with modern techniques, products, and styles that define today.",
   },
 ];
 
@@ -103,12 +103,11 @@ export default function OurStory() {
             style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
           >
             Where passion<br />
-            becomes{" "}
+            meets Expertise{" "}
             <em className="not-italic border-b border-white/25 pb-0.5">craft</em>
           </h2>
           <p className="text-sm text-white/40 leading-relaxed max-w-md">
-            Looks Academy didn't start with classrooms. It started with a belief —
-            that beauty is a skill, and every skill deserves a great teacher.
+            Our salon was built on a simple belief: great hair is both an art and a skill. Every style we create is shaped by passion, experience, and attention to detail—because you deserve nothing less.
           </p>
         </div>
       </div>
@@ -203,12 +202,12 @@ export default function OurStory() {
           className="text-3xl md:text-4xl lg:text-5xl font-medium leading-tight max-w-2xl"
           style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
         >
-          <span className="text-white">"We don't just teach beauty.</span>
+          <span className="text-white">"We don't just style hair.</span>
           <br />
-          <span className="text-white/30">We build careers."</span>
+          <span className="text-white/30">We create confidence."</span>
         </blockquote>
         <cite className="text-[11px] tracking-[0.2em] uppercase text-white/25 not-italic md:pb-1 shrink-0">
-          — Looks Academy, Dehradun
+          — Looks Salon, Dehradun
         </cite>
       </div>
 

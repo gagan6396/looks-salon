@@ -11,7 +11,7 @@ const features = [
       </svg>
     ),
     title: "Award Winning Haircut",
-    desc: "Experience more than you can imagine with our special haircuts suitable for your face shape.",
+    desc: "Get a style that suits you. Our haircuts are designed to match your face shape and bring out your best look.",
   },
   {
     icon: (
@@ -21,8 +21,8 @@ const features = [
         <path d="M5 15 Q5 5 15 5" stroke="#c9a96e" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="2 2"/>
       </svg>
     ),
-    title: "Time Is Shorting",
-    desc: "Getting the hair you dream of with us is no longer a dream. Book in minutes.",
+    title: "Short on Time? We’ve Got You",
+    desc: "Great hair doesn’t have to wait. Book your appointment in minutes and get the look you’ve always wanted.",
   },
 ];
 
@@ -177,9 +177,7 @@ export default function AboutSection() {
             </h2>
 
             <p className="section-body text-[0.82rem] sm:text-[0.9rem] lg:text-[0.94rem] max-w-[420px]">
-              Contact us for hair cutting, coloring, blow drying, care and more. We care about your hair
-              with new generation and natural methods. Because you are valuable to us. We are at your
-              service with innovative applications, customer satisfaction, new generation hair care.
+            From haircuts and coloring to blow-drying and treatments, we offer everything you need to keep your hair looking its best. We use modern techniques and quality products to care for your hair—because you deserve it.
             </p>
 
             <div className="divider-hatch" />
