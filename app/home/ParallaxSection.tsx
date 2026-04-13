@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ParallaxHero() {
     return (
       <>
@@ -37,13 +39,14 @@ export default function ParallaxHero() {
               <br />
               PROFESSIONALS
             </h1>
-  
+  <Link href='/contact-us'>
             <button
               className="w-fit border border-white text-white text-xs tracking-[0.35em] uppercase px-10 py-4 hover:bg-white hover:text-gray-900 transition-all duration-300"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
-            >
+              >
               Contact Us
             </button>
+              </Link>
           </div>
         </div>
       </>

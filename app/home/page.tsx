@@ -8,6 +8,7 @@ import BrandMarquee from './Brandmarquee'
 import GridGallery from './GalleryGrid'
 import OurStory from './Ourstory'
 import Footer from '../components/Footer'
+import Testimonials from './Testimonial'
 
 function page() {
   return (
@@ -19,6 +20,7 @@ function page() {
       <ServicesSection/>
       <ParallaxHero/>
       <BrandMarquee/>
+      <Testimonials/>
       <GridGallery/>
       <Footer/>
     </div>

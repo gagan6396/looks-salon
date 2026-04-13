@@ -82,15 +82,15 @@ export default function Navbar() {
       `}</style>
 
       <nav
-        className={`fixed py-2 top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed py-0 top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-[#0d0d0d]/95 backdrop-blur-md shadow-[0_2px_30px_rgba(0,0,0,0.5)]"
-            : "bg-transparent"
+            ? "bg-black shadow-[0_2px_30px_rgba(0,0,0,0.5)]"
+            : "bg-black"
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 flex items-center justify-between h-[72px]">
 
-          {/* ── Logo — drop your file at /public/logo.png ── */}
+          {/* ── Logo ── */}
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/Looks-salon-logo.png"
@@ -140,7 +140,7 @@ export default function Navbar() {
 
         {/* ── Mobile Menu ── */}
         {menuOpen && (
-          <div className="slide-down lg:hidden bg-[#0d0d0d]/98 border-t border-white/5 px-6 pb-6 pt-4">
+          <div className="slide-down lg:hidden bg-black border-t border-white/5 px-6 pb-6 pt-4">
             <ul className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <li key={link.label}>
