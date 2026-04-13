@@ -82,7 +82,7 @@ export default function Navbar() {
       `}</style>
 
       <nav
-        className={`fixed py-4 top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed py-2 top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
             ? "bg-black shadow-[0_2px_30px_rgba(0,0,0,0.5)]"
             : "bg-black"
