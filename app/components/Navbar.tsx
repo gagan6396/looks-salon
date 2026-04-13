@@ -10,7 +10,7 @@ const navLinks = [
   // { label: "Services", href: "/services" },
   // { label: "Pricings", href: "/pricings" },
   // { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact-us" },
+  { label: "Contact-Us", href: "/contact-us" },
 ];
 
 export default function Navbar() {
@@ -23,6 +23,8 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+  
   return (
     <>
       <style>{`
@@ -155,10 +157,10 @@ export default function Navbar() {
               ))}
             </ul>
             <a
-              href="tel:+12345678910"
+              href="tel:+91 8006022266"
               className="phone-btn mt-5 inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full text-white text-sm"
             >
-              +1 (234) 567 89 10
+              +91 8006022266
             </a>
           </div>
         )}
