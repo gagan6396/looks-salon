@@ -6,6 +6,8 @@ import ServicesSection from './ServicesSection'
 import ParallaxHero from './ParallaxSection'
 import BrandMarquee from './Brandmarquee'
 import GridGallery from './GalleryGrid'
+import OurStory from './Ourstory'
+import Footer from '../components/Footer'
 
 function page() {
   return (
@@ -13,10 +15,12 @@ function page() {
       <Navbar/>
       <HeroSlider/>
       <AboutSection/>
+      <OurStory/>
       <ServicesSection/>
       <ParallaxHero/>
       <BrandMarquee/>
       <GridGallery/>
+      <Footer/>
     </div>
   )
 }
