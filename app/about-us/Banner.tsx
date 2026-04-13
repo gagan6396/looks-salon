@@ -6,7 +6,7 @@ const SalonBanner = () => {
     <section className="relative w-full h-[74vh] max-h-[750px] min-h-[400px] overflow-hidden bg-black">
 
       <Image
-        src="/images/banner.jpg"
+        src="/looksban.webp"
         alt="Salon banner"
         fill
         className="object-cover object-center grayscale"
