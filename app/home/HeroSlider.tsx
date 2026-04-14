@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "/looksban.webp",
   "/looks-salon2.webp",
+  "/looks-salon.webp",
   "/banner3.webp",
 ];
 
