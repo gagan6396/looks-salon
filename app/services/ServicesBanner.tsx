@@ -3,18 +3,16 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "/looksban.webp",
-  "/looks-salon2.webp",
-  "/banner3.webp",
+  "looksban.webp"
 ];
 
-export default function ImageSlider() {
+export default function ServicesBanner() {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 6000);
+    }, 3000);
     return () => clearInterval(timer);
   }, []);
 
@@ -34,7 +32,7 @@ export default function ImageSlider() {
               key={i}
               src={src}
               alt={`banner-${i}`}
-              className="w-full flex-shrink-0"
+              className="w-full flex-shrink-0 object-cover h-[200px] sm:h-[320px] md:h-[420px] lg:h-[520px]"
             />
           ))}
         </div>
