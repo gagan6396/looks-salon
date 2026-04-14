@@ -11,7 +11,7 @@ const navLinks: Record<string, { label: string; href: string }[]> = {
   Academy: [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about-us" },
-    { label: "Contact", href: "/contact-us" },
+    { label: "Contact Us", href: "/contact-us" },
     // { label: "Our Story", href: "/about-us#story" },
     // { label: "Faculty", href: "/about#faculty" },
     // { label: "Gallery", href: "/gallery" },
@@ -97,16 +97,15 @@ export default function Footer() {
           {/* Academy description */}
           <div className="space-y-3">
             <p className="text-white text-sm leading-relaxed">
-              India's premier beauty & wellness academy, empowering aspiring artists 
-              with industry-leading skills since 2010.
+            Founded with a vision to redefine modern grooming and elegance, our salon has been setting trends and creating unforgettable makeovers for over a decade.
             </p>
-            <div className="flex flex-wrap items-center gap-3 text-white text-xs">
+            {/* <div className="flex flex-wrap items-center gap-3 text-white text-xs">
               <span>✓ 5000+ Graduates</span>
               <span className="w-1 h-1 rounded-full bg-white" />
               <span>✓ 50+ Expert Faculty</span>
               <span className="w-1 h-1 rounded-full bg-white" />
               <span>✓ 100% Placement Support</span>
-            </div>
+            </div> */}
           </div>
         </div>
 

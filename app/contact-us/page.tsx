@@ -3,6 +3,8 @@ import ContactBanner from './ContactBanner'
 import ContactSection from './Form'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import FAQ from '../about-us/FAQ'
+import BrandMarquee from '../home/Brandmarquee'
 
 function page() {
   return (
@@ -10,6 +12,8 @@ function page() {
       <Navbar/>
       <ContactBanner/>
       <ContactSection/>
+      <FAQ/>
+      <BrandMarquee/>
       <Footer/>
     </div>
   )
