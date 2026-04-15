@@ -8,15 +8,15 @@ import Image from "next/image";
 // Place your images at /public/images/gallery-1.jpg ... gallery-8.jpg
 
 const cells = [
-  { type: "image", src: "/images/gallery-1.jpg", span: "" },
-  { type: "image", src: "/images/gallery-2.jpg", span: "" },
-  { type: "image", src: "/images/gallery-3.jpg", span: "" },
-  { type: "image", src: "/images/gallery-4.jpg", span: "" },
+  { type: "image", src: "/8.png", span: "" },
+  { type: "image", src: "/9.png", span: "" },
+  { type: "image", src: "/10.png", span: "" },
+  { type: "image", src: "/13.png", span: "" },
   { type: "logo" },
-  { type: "image", src: "/images/gallery-5.jpg", span: "" },
-  { type: "image", src: "/images/gallery-6.jpg", span: "" },
-  { type: "image", src: "/images/gallery-7.jpg", span: "" },
-  { type: "image", src: "/images/gallery-8.jpg", span: "" },
+  { type: "image", src: "/14.png", span: "" },
+  { type: "image", src: "/15.png", span: "" },
+  { type: "image", src: "/17.png", span: "" },
+  { type: "image", src: "/18.png", span: "" },
 ];
 
 export default function GalleryGrid() {
