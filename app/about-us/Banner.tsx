@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "looksban.webp"
+  "about.jpeg"
 ];
 
 export default function ImageSlider() {
@@ -32,7 +32,7 @@ export default function ImageSlider() {
               key={i}
               src={src}
               alt={`banner-${i}`}
-              className="w-full flex-shrink-0 object-cover h-[200px] sm:h-[320px] md:h-[420px] lg:h-[520px]"
+              className="w-full flex-shrink-0 object-cover h-[200px] sm:h-[320px] md:h-[420px] lg:h-[490px]"
             />
           ))}
         </div>
