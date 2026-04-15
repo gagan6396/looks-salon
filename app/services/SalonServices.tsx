@@ -1072,6 +1072,79 @@ export default function SalonServices() {
     }
   };
 
+  // Helper function to render pagination buttons
+  const renderPaginationButtons = () => {
+    const buttons = [];
+    const maxVisible = 5; // Max visible page buttons on mobile
+    const sideButtons = window.innerWidth < 640 ? 1 : 2; // Fewer side buttons on mobile
+    
+    let startPage = Math.max(1, currentPage - sideButtons);
+    let endPage = Math.min(totalPages, currentPage + sideButtons);
+    
+    // Adjust if we're near the start or end
+    if (currentPage <= sideButtons + 1) {
+      endPage = Math.min(totalPages, maxVisible);
+    }
+    if (currentPage >= totalPages - sideButtons) {
+      startPage = Math.max(1, totalPages - maxVisible + 1);
+    }
+    
+    // Always show first page
+    if (startPage > 1) {
+      buttons.push(
+        <button
+          key={1}
+          onClick={() => setCurrentPage(1)}
+          className="hidden sm:inline-flex w-8 h-8 text-xs font-body rounded transition-all text-gray-500 hover:bg-gray-100"
+        >
+          1
+        </button>
+      );
+      if (startPage > 2) {
+        buttons.push(
+          <span key="dots-start" className="px-1 text-gray-400 text-xs">...</span>
+        );
+      }
+    }
+    
+    // Middle pages
+    for (let i = startPage; i <= endPage; i++) {
+      buttons.push(
+        <button
+          key={i}
+          onClick={() => setCurrentPage(i)}
+          className={`w-8 h-8 text-xs font-body rounded transition-all ${
+            currentPage === i
+              ? "bg-black text-white"
+              : "text-gray-500 hover:bg-gray-100"
+          }`}
+        >
+          {i}
+        </button>
+      );
+    }
+    
+    // Always show last page
+    if (endPage < totalPages) {
+      if (endPage < totalPages - 1) {
+        buttons.push(
+          <span key="dots-end" className="px-1 text-gray-400 text-xs">...</span>
+        );
+      }
+      buttons.push(
+        <button
+          key={totalPages}
+          onClick={() => setCurrentPage(totalPages)}
+          className="hidden sm:inline-flex w-8 h-8 text-xs font-body rounded transition-all text-gray-500 hover:bg-gray-100"
+        >
+          {totalPages}
+        </button>
+      );
+    }
+    
+    return buttons;
+  };
+
   return (
     <section className="bg-white text-black font-sans">
       <style>{`
@@ -1152,48 +1225,48 @@ export default function SalonServices() {
           ))}
         </div>
 
-        {/* Pagination */}
+        {/* Responsive Pagination */}
         {totalPages > 1 && (
-          <div className="flex justify-center items-center gap-2 mt-10">
-            <button
-              onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-              disabled={currentPage === 1}
-              className={`px-3 py-1.5 text-xs font-body tracking-wide rounded border transition-all ${
-                currentPage === 1
-                  ? "text-gray-300 border-gray-100 cursor-not-allowed"
-                  : "text-black border-gray-200 hover:bg-black hover:text-white hover:border-black"
-              }`}
-            >
-              Previous
-            </button>
-            
-            <div className="flex gap-1">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                <button
-                  key={page}
-                  onClick={() => setCurrentPage(page)}
-                  className={`w-8 h-8 text-xs font-body rounded transition-all ${
-                    currentPage === page
-                      ? "bg-black text-white"
-                      : "text-gray-500 hover:bg-gray-100"
-                  }`}
-                >
-                  {page}
-                </button>
-              ))}
+          <div className="flex flex-col items-center gap-3 mt-10">
+            {/* Pagination Controls */}
+            <div className="flex items-center justify-center gap-1 sm:gap-2 flex-wrap">
+              <button
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className={`px-2 sm:px-3 py-1.5 text-xs font-body tracking-wide rounded border transition-all ${
+                  currentPage === 1
+                    ? "text-gray-300 border-gray-100 cursor-not-allowed"
+                    : "text-black border-gray-200 hover:bg-black hover:text-white hover:border-black"
+                }`}
+              >
+                <span className="hidden sm:inline">Previous</span>
+                <span className="sm:hidden">←</span>
+              </button>
+              
+              <div className="flex gap-1">
+                {renderPaginationButtons()}
+              </div>
+              
+              <button
+                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                disabled={currentPage === totalPages}
+                className={`px-2 sm:px-3 py-1.5 text-xs font-body tracking-wide rounded border transition-all ${
+                  currentPage === totalPages
+                    ? "text-gray-300 border-gray-100 cursor-not-allowed"
+                    : "text-black border-gray-200 hover:bg-black hover:text-white hover:border-black"
+                }`}
+              >
+                <span className="hidden sm:inline">Next</span>
+                <span className="sm:hidden">→</span>
+              </button>
             </div>
-
-            <button
-              onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-              disabled={currentPage === totalPages}
-              className={`px-3 py-1.5 text-xs font-body tracking-wide rounded border transition-all ${
-                currentPage === totalPages
-                  ? "text-gray-300 border-gray-100 cursor-not-allowed"
-                  : "text-black border-gray-200 hover:bg-black hover:text-white hover:border-black"
-              }`}
-            >
-              Next
-            </button>
+            
+            {/* Page indicator for mobile */}
+            <div className="sm:hidden text-center">
+              <p className="font-body text-[11px] text-gray-400">
+                Page {currentPage} of {totalPages}
+              </p>
+            </div>
           </div>
         )}
 

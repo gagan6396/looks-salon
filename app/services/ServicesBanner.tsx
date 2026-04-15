@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "looksban.webp"
+  "4.png"
 ];
 
-export default function ServicesBanner() {
+export default function ImageSlider() {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function ServicesBanner() {
               key={i}
               src={src}
               alt={`banner-${i}`}
-              className="w-full flex-shrink-0 object-cover h-[200px] sm:h-[320px] md:h-[420px] lg:h-[520px]"
+              className="w-full flex-shrink-0 object-cover h-full"
             />
           ))}
         </div>
