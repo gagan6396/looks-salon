@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 const images = [
   "/looks-salon2.webp",
   "/looks-salon.webp",
-  "/banner3.webp",
+  "/looksban5.jpeg",
 ];
 
 export default function ImageSlider() {
