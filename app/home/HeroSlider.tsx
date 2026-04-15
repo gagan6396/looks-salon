@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 const images = [
   "/looks-salon2.webp",
-  "/looks-salon.webp",
+  "/homeb2.png",
   "/looksban5.jpeg",
 ];
 

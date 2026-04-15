@@ -40,7 +40,7 @@ const values = [
 ];
 
 // ── Replace with your actual image path ──
-const HERO_IMAGE_SRC = "/images/our-story-hero.jpg";
+const HERO_IMAGE_SRC = "/looksh.png";
 
 function useInView(threshold = 0.12) {
   const ref = useRef<HTMLDivElement>(null);

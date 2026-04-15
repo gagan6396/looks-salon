@@ -32,7 +32,7 @@ export default function ImageSlider() {
               key={i}
               src={src}
               alt={`banner-${i}`}
-              className="w-full flex-shrink-0 object-fill h-full"
+              className="w-full flex-shrink-0 object-contain md:object-fill h-full"
             />
           ))}
         </div>
