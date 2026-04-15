@@ -24,7 +24,7 @@ export default function ImageSlider() {
       <div className="relative w-full overflow-hidden">
 
         <div
-          className="flex transition-transform duration-500 ease-in-out"
+          className="flex transition-transform duration-500 ease-in-out h-[75vh]"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {images.map((src, i) => (
@@ -32,7 +32,7 @@ export default function ImageSlider() {
               key={i}
               src={src}
               alt={`banner-${i}`}
-              className="w-full flex-shrink-0 object-cover h-[200px] sm:h-[320px] md:h-[420px] lg:h-[500px]"
+              className="w-full flex-shrink-0 object-cover h-full"
             />
           ))}
         </div>
