@@ -13,7 +13,7 @@ export default function ParallaxHero() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1600&q=80')",
+                "url('bannerpl.png')",
               backgroundAttachment: "fixed",
               filter: "brightness(0.45) grayscale(0.75)",
             }}
@@ -25,7 +25,7 @@ export default function ParallaxHero() {
               className="text-xs tracking-[0.5em] text-gray-300 uppercase mb-4"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
-              Looks Academy
+              Looks Salon
             </p>
   
             <h1
@@ -35,7 +35,7 @@ export default function ParallaxHero() {
                 color: "#c9a84c",
               }}
             >
-              LEARN FROM
+              GET STYLED BY
               <br />
               PROFESSIONALS
             </h1>
