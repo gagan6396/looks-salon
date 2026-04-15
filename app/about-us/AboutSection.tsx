@@ -22,7 +22,7 @@ const AboutAcademy = () => {
         <div className="flex-1 w-full">
           <div className="relative w-full aspect-[4/3] border border-neutral-200">
             <Image
-              src="/images/academy.jpg"
+              src="/looksabout.png"
               alt="Looks Academy"
               fill
               className="object-cover grayscale"
