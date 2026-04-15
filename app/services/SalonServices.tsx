@@ -1072,20 +1072,19 @@ export default function SalonServices() {
     }
   };
 
-  // Helper function to render pagination buttons
+  // Fixed pagination rendering without window reference
   const renderPaginationButtons = () => {
     const buttons = [];
-    const maxVisible = 5; // Max visible page buttons on mobile
-    const sideButtons = window.innerWidth < 640 ? 1 : 2; // Fewer side buttons on mobile
+    const maxVisible = 5;
     
-    let startPage = Math.max(1, currentPage - sideButtons);
-    let endPage = Math.min(totalPages, currentPage + sideButtons);
+    let startPage = Math.max(1, currentPage - 2);
+    let endPage = Math.min(totalPages, currentPage + 2);
     
     // Adjust if we're near the start or end
-    if (currentPage <= sideButtons + 1) {
+    if (currentPage <= 3) {
       endPage = Math.min(totalPages, maxVisible);
     }
-    if (currentPage >= totalPages - sideButtons) {
+    if (currentPage >= totalPages - 2) {
       startPage = Math.max(1, totalPages - maxVisible + 1);
     }
     
@@ -1095,7 +1094,7 @@ export default function SalonServices() {
         <button
           key={1}
           onClick={() => setCurrentPage(1)}
-          className="hidden sm:inline-flex w-8 h-8 text-xs font-body rounded transition-all text-gray-500 hover:bg-gray-100"
+          className="w-8 h-8 text-xs font-body rounded transition-all text-gray-500 hover:bg-gray-100"
         >
           1
         </button>
@@ -1135,7 +1134,7 @@ export default function SalonServices() {
         <button
           key={totalPages}
           onClick={() => setCurrentPage(totalPages)}
-          className="hidden sm:inline-flex w-8 h-8 text-xs font-body rounded transition-all text-gray-500 hover:bg-gray-100"
+          className="w-8 h-8 text-xs font-body rounded transition-all text-gray-500 hover:bg-gray-100"
         >
           {totalPages}
         </button>
