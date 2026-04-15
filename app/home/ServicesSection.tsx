@@ -9,7 +9,7 @@ const services = [
     letter: "H",
     title: "Hair Care",
     desc: "After deciding on the care your hair needs, we help you achieve a glamorous look.",
-    image: "/images/service-1.jpg",
+    image: "/20.png",
     back: {
       heading: "What's Included",
       points: ["Deep conditioning treatment", "Scalp massage & analysis", "Custom moisture therapy", "Heat protection styling"],
@@ -22,7 +22,7 @@ const services = [
     letter: "A",
     title: "Advanced Styling",
     desc: "We make you feel special by applying the latest and modern hairstyle.",
-    image: "/images/service-2.jpg",
+    image: "/21.png",
     back: {
       heading: "What's Included",
       points: ["Consultation & face shape analysis", "Blow dry & finish", "Curling or straightening", "Style hold & protect"],
@@ -35,7 +35,7 @@ const services = [
     letter: "I",
     title: "Innovative Haircut",
     desc: "You will be reborn with our innovative modern haircut techniques.",
-    image: "/images/service-3.jpg",
+    image: "/22.png",
     back: {
       heading: "What's Included",
       points: ["Precision cut technique", "Face-shape tailored style", "Razor or scissor finish", "Complimentary wash & dry"],
@@ -48,7 +48,7 @@ const services = [
     letter: "R",
     title: "Range Hair",
     desc: "You will have a magnificent look with color ranges specific to your head structure.",
-    image: "/images/service-4.jpg",
+    image: "/23.png",
     back: {
       heading: "What's Included",
       points: ["Color consultation", "Full or partial highlights", "Balayage / ombre options", "Toner & gloss finish"],
