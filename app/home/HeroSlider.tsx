@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 const images = [
   {
     desktop: "/looks-salon2.webp",
-    mobile: "/ph1.jpeg"
+    mobile: "/mob4.jpeg"
   },
   {
     desktop: "/homeb2.png",
@@ -13,7 +13,7 @@ const images = [
   },
   {
     desktop: "/looksban5.jpeg",
-    mobile: "/ph3.jpg"
+    mobile: "/looksb.jpeg"
   },
 ];
 
