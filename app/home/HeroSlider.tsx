@@ -3,13 +3,34 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "/looks-salon2.webp",
-  "/homeb2.png",
-  "/looksban5.jpeg",
+  {
+    desktop: "/looks-salon2.webp",
+    mobile: "/ph1.jpeg"
+  },
+  {
+    desktop: "/homeb2.png",
+    mobile: "/ph2.jpg"
+  },
+  {
+    desktop: "/looksban5.jpeg",
+    mobile: "/ph3.jpg"
+  },
 ];
 
 export default function ImageSlider() {
   const [current, setCurrent] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -29,10 +50,10 @@ export default function ImageSlider() {
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
-          {images.map((src, i) => (
+          {images.map((img, i) => (
             <img
               key={i}
-              src={src}
+              src={isMobile ? img.mobile : img.desktop}
               alt={`banner-${i}`}
               className="w-full flex-shrink-0"
             />
