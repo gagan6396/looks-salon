@@ -197,7 +197,7 @@ export default function AboutSection() {
             </div>
 
             <div className="mt-1">
-              <a href="/about" className="cta-dark text-[0.9rem] sm:text-[1rem] lg:text-[1.05rem] px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-4">
+              <a href="/about-us" className="cta-dark text-[0.9rem] sm:text-[1rem] lg:text-[1.05rem] px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-4">
                 Get to know us
                 <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
                   <path d="M1 5h14M10 1l5 4-5 4" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
